@@ -1,0 +1,9 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "html-to-md-entry": {
+      "description": "A blank schematic.",
+      "factory": "./html-to-md-entry/index#htmlToMdEntry"
+    }
+  }
+}
