@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "html-to-md",
+  "title": "HTML to md for entries",
+  "type": "object",
+  "properties": {
+    "path": {
+      "description": "The path to the entries folder",
+      "type": "string",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    }
+  },
+  "required": [
+    "path"
+  ]
+}
