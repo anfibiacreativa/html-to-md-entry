@@ -34,7 +34,7 @@ export function htmlToMdEntry(_options: any): Rule {
     const entries = hasEntries.subdirs;
     entries.map((entry) => {
       let title = entry;
-      let path =  dasherize(entry)
+      let path =  dasherize(entry);
       tree.create(normalize(`${blogPath}/${path}.md`), `--- \ntitle: ${title} \ndescription:  \npublished: true \nslug: \n--- \n\n\n# ${title}`); 
     })
     // just so you see what are the contents in console. You can remove this
