@@ -35,7 +35,7 @@ export function htmlToMdEntry(_options: any): Rule {
     entries.map((entry) => {
       let title = entry;
       let path =  dasherize(entry);
-      tree.create(normalize(`${blogPath}/${path}.md`), `--- \ntitle: ${title} \ndescription:  \npublished: true \nslug: \n--- \n\n\n# ${title}`); 
+      tree.create(normalize(`${blogPath}/${path}.md`), `--- \ntitle: ${title}\ndescription:\npublished: true\nslugs:\n--- \n\n\n# ${title}`); 
     })
     // just so you see what are the contents in console. You can remove this
     console.log(hasEntries.subdirs);
